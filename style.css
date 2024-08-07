@@ -1,0 +1,25 @@
+:root {
+    --sidebar-color: #1992D4;
+    --background-color: #E2E8F0;
+    --border-color: #F0B429;
+}
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+}
+
+body {
+    font-family: "Roboto", system-ui;
+}
+
+img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+}
+
+input, button, textarea, select {
+    font: inherit;
+}
