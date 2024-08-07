@@ -23,3 +23,80 @@ img, picture, video, canvas, svg {
 input, button, textarea, select {
     font: inherit;
 }
+
+html,
+body {
+    height: 100%;
+}
+
+.sidebar {
+    font-weight: bold;
+    background-color: var(--sidebar-color);
+    color: white;
+    grid-column: 1 / 2;
+    grid-row: 1 / -1;
+    font-size: 1.3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1%;
+    min-width: 290px;
+}
+
+
+.sidebar div:not(.dashboard) {
+    display: flex;
+    gap: 12%;
+    margin-left: 7%;
+}
+
+.sidebar div img{
+    height: 40px;
+    filter: brightness(0) invert(1);
+    padding-left: 7%;
+}
+
+.sidebar div p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dashboard {
+    display: flex;
+    gap: 5%;
+    margin-bottom: 10%;
+    padding: 7%;
+}
+
+.dashboard p {
+    font-size: 2rem;
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+}
+
+#dashboard-img {
+    height: 80px;
+    grid-column: 1 / 2;
+    padding: 0;
+}
+
+.container {
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 150px 1fr;
+}
+
+.header {
+    display: grid;
+    grid-row: 75px 75px;
+}
+
+label img{
+    height: 30px;
+}
+
+.communities {
+    margin-bottom: 20%;
+}
+
