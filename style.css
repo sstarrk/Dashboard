@@ -198,8 +198,141 @@ button {
 
 .main {
     background-color: var(--background-color);
+    display: grid;
+    grid-template-columns: 1fr 1fr 0.6fr;
+    padding: 30px 25px;
+    grid-template-rows: 0.2fr 1fr 1fr 1fr;
+    font-weight: bold;
+    font-size: 1.2rem;
+    gap: 20px;
 }
 
 #share-button {
     margin-right: 100px;
+}
+
+#text-projects {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    display: grid;
+    align-items: end;
+    padding-left: 3px;
+}
+
+#text-announcements {
+    grid-column: 3 / 4;
+    grid-row: 1 / 2;
+    display: grid;
+    align-items: end;
+    padding-left: 3px;
+}
+
+.rest {
+    display: grid;
+    grid-column: 3 / 4;
+    grid-row: 2 / 5;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr 1fr 0.1fr 0.4fr 2fr;
+    gap: 20px;
+}
+
+.announcements {
+    padding: 35px;
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    justify-content: space-around;
+}
+
+.announcements p {
+    font-size: 1rem;
+    color: black;
+}
+
+.announcements div {
+    font-size: 0.7rem;
+    color: gray;
+}
+
+.hyphen {
+    padding-bottom: 8px;
+    text-align: center;
+}
+
+.text-people {
+    grid-column: 1 / 2;
+    grid-row: 4 / 5;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: end;
+    padding-left: 3px;
+}
+
+.people {
+    grid-row: 5 / 6;
+    grid-column: 1 / 2;
+    background-color: white;
+    border-radius: 15px;
+    padding: 35px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.people div img {
+    height: 45px;
+}
+
+#kuka {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    color: gray;
+}
+
+#kuka p::before {
+    content: "@combo_boxmaster       ";
+    font-size: 0.9rem;
+    color: black;
+}
+
+#aset {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    color: grey;
+}
+
+#aset p::before {
+    color: black;
+    content: "@zaualmakan";
+    font-size: 0.9rem;
+}
+
+#projects {
+    grid-column: 1 / 3;
+    grid-row: 2 / 5;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-rows: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.card {
+    padding: 35px;
+    background-color: white;
+    border-radius: 15px;
+    border-left: 5px solid red;
+}
+
+.card p {
+    font-size: 0.9rem;
+    color:grey;
+}
+
+.project-name {
+    margin-bottom: 5px;
 }
