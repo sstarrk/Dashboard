@@ -84,12 +84,13 @@ body {
     height: 100%;
     display: grid;
     grid-template-columns: 1fr 4fr;
-    grid-template-rows: 150px 1fr;
+    grid-template-rows: 175px 1fr;
 }
 
 .header {
     display: grid;
-    grid-row: 75px 75px;
+    grid-row: 75px 100px;
+    box-shadow: 0px -15px 20px -7px grey outset;
 }
 
 .first-line {
@@ -115,6 +116,9 @@ form {
     grid-column: 1 / -1;
     grid-row: 2 / 3;
     height: 75px;
+    display: flex;
+    align-items: center;
+    width: 100%;
 }
 
 label img {
@@ -153,8 +157,49 @@ input {
     padding: 5px;
 }
 
+#buttons {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    gap: 15px;
+    flex-wrap: nowrap;
+}
+
+button {
+    padding: 14px 40px;
+    border-radius: 30px;
+    border: none;
+    background-color: var(--sidebar-color);
+    font-weight: bold;
+    color: white;
+    margin: 0 20px;
+}
 
 .communities {
     margin-bottom: 20%;
 }
 
+#avatar {
+    height: 70px;
+    padding-left: 45px;
+    padding-right: 20px;
+}
+
+#name {
+    font-weight: bold;
+    font-size: 1.4rem;
+    flex-grow: 1;
+}
+
+#name::before {
+    font-size: 1rem;
+    content: "Hi there,";
+}
+
+.main {
+    background-color: var(--background-color);
+}
+
+#share-button {
+    margin-right: 100px;
+}
