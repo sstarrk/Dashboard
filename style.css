@@ -92,9 +92,67 @@ body {
     grid-row: 75px 75px;
 }
 
-label img{
+.first-line {
+    grid-column: 1 / -1;
+    grid-row: 1 / 2;
+    height: 75px;
+    display: flex;
+    align-items: center;
+    gap: 3%;
+}
+
+form {
+    display: flex;
+    flex-grow: 1.7;
+}
+
+#search {
+    flex-grow: 1;
+    flex-shrink: 0;
+}
+
+.last-line {
+    grid-column: 1 / -1;
+    grid-row: 2 / 3;
+    height: 75px;
+}
+
+label img {
+    min-height: 30px;
+    height: 30px;
+    padding-left: 45px;
+    padding-right: 16px;
+}
+
+#notificationImage {
     height: 30px;
 }
+
+.right {
+    display: flex;
+    flex-grow: 1;
+    align-items: center;
+    justify-content: center;
+    gap: 5%;
+    flex-shrink: 0;
+}
+
+#manat {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+#picture {
+    height: 50px;
+}
+
+input {
+    background-color: var(--background-color);
+    border-radius: 15px;
+    border: none;
+    padding: 5px;
+}
+
 
 .communities {
     margin-bottom: 20%;
